@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  node:
+    build : 
+      dockerfile : ./Dockerfile
+      context : .
+    image: bruno/dockernode
+    container_name : dockernode
+    command: npm start
+    ports : 
+      - "3000:3000"
+    volumes:
+      - .:/usr/app

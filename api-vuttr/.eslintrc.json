@@ -1,0 +1,12 @@
+{
+  "parser": "babel-eslint",
+  "extends": "standard",
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "prefer-promise-reject-errors": ["off", { "allowEmptyReject": true }]
+  }
+}
