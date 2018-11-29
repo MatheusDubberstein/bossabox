@@ -28,7 +28,7 @@ class ToolsController {
   async update (req, res) {
     const { ...data } = req.body
 
-    const tool = await Tool.findByIdAndUpdate(req.params.id, data, {
+    const tool = await Tool.findOneAndUpdate(req.params.id, data, {
       new: true
     })
 
@@ -36,7 +36,7 @@ class ToolsController {
   }
 
   async destroy (req, res) {
-    await Tool.findByIdAndRemove(req.params.id)
+    await Tool.findOneAndDelete(req.params.id)
 
     return res.send()
   }

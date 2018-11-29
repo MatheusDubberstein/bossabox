@@ -12,6 +12,12 @@ class UserController {
 
     return res.json(user)
   }
+
+  async destroy (req, res) {
+    await User.findOneAndDelete(req.params.id)
+
+    return res.send()
+  }
 }
 
 module.exports = new UserController()

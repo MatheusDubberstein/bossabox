@@ -6,6 +6,7 @@ module.exports = {
   },
   options: {
     useCreateIndex: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useFindAndModify: false
   }
 }

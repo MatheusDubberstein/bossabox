@@ -1,6 +1,7 @@
 {
   "extends": "standard",
   "env": {
-    "jest": true
+    "jest": true,
+    "mocha": true
   }
 }
